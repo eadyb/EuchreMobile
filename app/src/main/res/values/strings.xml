@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Term Project</string>
+    <string name="team_1_score_label">Team 1 Score: %1$d</string>
+    <string name="team_2_score_label">Team 2 Score: %1$d</string>
+    <string name="team_1_tricks_label">Team 1 Tricks: %1$d</string>
+    <string name="team_2_tricks_label">Team 2 Tricks: %1$d</string>
+    <string name="kitty_card_label">Kitty Card</string>
+    <string name="trump_label">Trump: %1$s</string>
+    <string name="buy_card_backs_button">Buy Rear Card Image!</string>
+    <string name="buy_points_button">Buy Points!</string>
+    <string name="buy_premium_button">Subscribe to Premium!</string>
+    <string name="back_to_game_button">Back</string>
+    <string name="buy_points_label">+3 Points</string>
+    <string name="use_points_button">Use Points: %1$d</string>
+    <string name="to_store_button">Go to Store</string>
+    <string name="reset_game_button">End Game</string>
+</resources>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_background"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/team1scoreLbl"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/team_1_score_label"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/team2scoreLbl"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/team_2_score_label"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/team1scoreLbl"
+        app:layout_constraintTop_toBottomOf="@+id/team1scoreLbl" />
+
+    <TextView
+        android:id="@+id/trumpLbl"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/trump_label"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/team2scoreLbl"
+        app:layout_constraintTop_toBottomOf="@+id/team2scoreLbl" />
+
+    <TextView
+        android:id="@+id/team1tricksLbl"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/team_1_tricks_label"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/trumpLbl"
+        app:layout_constraintTop_toBottomOf="@+id/trumpLbl" />
+
+    <TextView
+        android:id="@+id/team2tricksLbl"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/team_2_tricks_label"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/team1tricksLbl"
+        app:layout_constraintTop_toBottomOf="@+id/team1tricksLbl" />
+
+    <ImageView
+        android:id="@+id/p3card1Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintEnd_toStartOf="@+id/p3card2Img"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/team1scoreLbl"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p3card2Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/p3card3Img"
+        app:layout_constraintStart_toEndOf="@+id/p3card1Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card1Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p3card3Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/p3card4Img"
+        app:layout_constraintStart_toEndOf="@+id/p3card2Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card2Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p3card4Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/p3card5Img"
+        app:layout_constraintStart_toEndOf="@+id/p3card3Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card3Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p3card5Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p3card4Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card4Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageButton
+        android:id="@+id/p1card1Btn"
+        android:layout_width="62.5dp"
+        android:layout_height="90.75dp"
+        android:layout_marginStart="42dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/p1card2Btn"
+        app:layout_constraintStart_toEndOf="@+id/p2card5Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageButton
+        android:id="@+id/p1card2Btn"
+        android:layout_width="62.5dp"
+        android:layout_height="90.75dp"
+        android:layout_marginStart="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/p1card3Btn"
+        app:layout_constraintStart_toEndOf="@+id/p1card1Btn"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageButton
+        android:id="@+id/p1card3Btn"
+        android:layout_width="62.5dp"
+        android:layout_height="90.75dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="25dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1card2Btn"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageButton
+        android:id="@+id/p1card4Btn"
+        android:layout_width="62.5dp"
+        android:layout_height="90.75dp"
+        android:layout_marginStart="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/p1card3Btn"
+        app:layout_constraintStart_toEndOf="@+id/p1card3Btn"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageButton
+        android:id="@+id/p1card5Btn"
+        android:layout_width="62.5dp"
+        android:layout_height="90.75dp"
+        android:layout_marginStart="2dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/p1card4Btn"
+        app:layout_constraintStart_toEndOf="@+id/p1card4Btn"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p3playCardImg"
+        android:layout_width="50dp"
+        android:layout_height="72.6dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/p4card1Img"
+        app:layout_constraintStart_toEndOf="@+id/p2card1Img"
+        app:layout_constraintTop_toBottomOf="@+id/p3card3Img"
+        app:srcCompat="@drawable/b1" />
+
+    <ImageView
+        android:id="@+id/p1playCardImg"
+        android:layout_width="50dp"
+        android:layout_height="72.6dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/p1card3Btn"
+        app:layout_constraintEnd_toStartOf="@+id/p4card5Img"
+        app:layout_constraintStart_toEndOf="@+id/p2card5Img"
+        app:srcCompat="@drawable/b1" />
+
+    <ImageView
+        android:id="@+id/p4card1Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:rotation="-90"
+        app:layout_constraintStart_toEndOf="@+id/p3card5Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card5Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p4card4Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="@+id/p4card3Img"
+        app:layout_constraintTop_toTopOf="@+id/p4card3Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p4card2Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="@+id/p4card1Img"
+        app:layout_constraintTop_toTopOf="@+id/p4card1Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p4card3Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="@+id/p4card2Img"
+        app:layout_constraintTop_toTopOf="@+id/p4card2Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p4card5Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="-90"
+        app:layout_constraintEnd_toEndOf="@+id/p4card4Img"
+        app:layout_constraintTop_toTopOf="@+id/p4card4Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2card1Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:rotation="90"
+        app:layout_constraintEnd_toStartOf="@+id/p3card1Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card1Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2card2Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="@+id/p2card1Img"
+        app:layout_constraintTop_toTopOf="@+id/p2card1Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2card3Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="@+id/p2card2Img"
+        app:layout_constraintTop_toTopOf="@+id/p2card2Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2card4Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="@+id/p2card3Img"
+        app:layout_constraintTop_toTopOf="@+id/p2card3Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2card5Img"
+        android:layout_width="41.66dp"
+        android:layout_height="60.5dp"
+        android:layout_marginTop="45dp"
+        android:rotation="90"
+        app:layout_constraintStart_toStartOf="@+id/p2card4Img"
+        app:layout_constraintTop_toTopOf="@+id/p2card4Img"
+        app:srcCompat="@drawable/b2" />
+
+    <ImageView
+        android:id="@+id/p2playCardImg"
+        android:layout_width="50dp"
+        android:layout_height="72.6dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toTopOf="@+id/p1card1Btn"
+        app:layout_constraintEnd_toStartOf="@+id/p3playCardImg"
+        app:layout_constraintStart_toEndOf="@+id/p2card3Img"
+        app:layout_constraintTop_toBottomOf="@+id/p3card1Img"
+        app:srcCompat="@drawable/b1" />
+
+    <ImageView
+        android:id="@+id/p4playCardImg"
+        android:layout_width="50dp"
+        android:layout_height="72.6dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@+id/p1card5Btn"
+        app:layout_constraintEnd_toStartOf="@+id/p4card3Img"
+        app:layout_constraintStart_toEndOf="@+id/p3playCardImg"
+        app:layout_constraintTop_toBottomOf="@+id/p3card5Img"
+        app:srcCompat="@drawable/b1" />
+
+    <ImageView
+        android:id="@+id/kittyCardImg"
+        android:layout_width="50dp"
+        android:layout_height="72.6dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/team2tricksLbl"
+        app:layout_constraintStart_toStartOf="@+id/team2tricksLbl"
+        app:layout_constraintTop_toBottomOf="@+id/team2tricksLbl"
+        app:srcCompat="@drawable/b1" />
+
+    <TextView
+        android:id="@+id/kittyCardLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/kitty_card_label"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/kittyCardImg"
+        app:layout_constraintStart_toStartOf="@+id/kittyCardImg"
+        app:layout_constraintTop_toBottomOf="@+id/kittyCardImg" />
+
+    <ImageButton
+        android:id="@+id/playGameBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/p4card1Img"
+        app:layout_constraintStart_toStartOf="@+id/p4card1Img"
+        app:layout_constraintTop_toTopOf="@+id/p3card5Img"
+        app:srcCompat="@drawable/play_btn_img" />
+
+    <Button
+        android:id="@+id/usePointsBtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="@string/use_points_button"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/toStoreBtn"
+        app:layout_constraintStart_toStartOf="@+id/team2tricksLbl"
+        app:layout_constraintTop_toBottomOf="@+id/kittyCardLbl" />
+
+    <Button
+        android:id="@+id/toStoreBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/to_store_button"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usePointsBtn"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/usePointsBtn" />
+
+    <Button
+        android:id="@+id/resetGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_game_button"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/p1card5Btn"
+        app:layout_constraintTop_toBottomOf="@+id/p4card5Img" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
